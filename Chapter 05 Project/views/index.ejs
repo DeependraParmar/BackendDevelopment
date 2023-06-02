@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <form action="/success" method="post">
+        <h1>Register</h1>
+        <input type="text" name="name" id="" placeholder="Name here" required>
+        <input type="email" name="email" id="" placeholder="Email here" required>
+        <input type="password" name="password" id="password" placeholder="Password here" required >
+        <div><input type="checkbox" name="" id="" onclick="togglePasswordVisibility()">Show Password</div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function togglePasswordVisibility() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+    </script>
+</body>
+</html>
